@@ -10,8 +10,11 @@ public class ClassroomRunner
 		Student s3 = new Student( "Fradkin", 17, 50.0 );
 	
 		System.out.println(s1);
+		s1.setName("Krishna");
 		System.out.println(s1.getName());
+		s1.setAge( 75 );
 		System.out.println(s1.getAge());
+		s1.setGrade( 99 );
 		System.out.println(s1.getGrade());
 		System.out.println();	
 		
@@ -32,15 +35,14 @@ public class ClassroomRunner
 		compSci.setStudent(s1, 0);
 		compSci.setStudent(s2, 1);
 		compSci.setStudent(s3, 2);
-		
+		System.out.println( compSci.getStudent(1) );
 
-		
+
 		
 		System.out.println("Computer Science class List: ");
 		compSci.printAllStudents();
 			
-			
-		
+		System.out.println( compSci.studentsAbove16() );
 		
 		
 	

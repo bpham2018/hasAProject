@@ -9,7 +9,7 @@ public class Classroom
 
 	public Classroom()
 	{
-		 room = new Student[10];
+		 room = new Student[3];
 		//System.out.println(room.length);
 	}
 
@@ -55,9 +55,9 @@ public class Classroom
 	public int studentsAbove16()
 	{
 		int amountOfStudents = 0;
-		for(Student s: room)
+		for(int i = 0; i < getSize(); i++ )
 		{
-			if(s.getAge() > 16)
+			if( room[i].getAge() > 16)
 				amountOfStudents++;
 		}	
 		return amountOfStudents;
